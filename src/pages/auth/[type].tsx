@@ -8,7 +8,7 @@ const Auth: React.FC = () => {
   const { type } = router.query;
   return (
     <div className="min-h-screen flex items-center justify-center text-white bg-gray-100">
-      <div className="flex flex-col md:flex-row w-full max-w-5xl bg-gray-700 rounded-lg shadow overflow-hidden">
+      <div className="flex flex-col md:flex-row w-full max-w-5xl bg-[#FD4E6E] rounded-lg shadow overflow-hidden">
         {/* Left Form Section */}
         <div className="w-full md:w-1/2 p-6">
           {type === "login" && <Login />}
