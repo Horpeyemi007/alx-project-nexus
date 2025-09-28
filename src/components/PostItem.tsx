@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { CommentList } from "./CommentList";
 import { AddComment } from "./AddComment";
+import Image from "next/image";
 
 export const PostItem: React.FC<{
   post: any;
@@ -24,9 +25,11 @@ export const PostItem: React.FC<{
   return (
     <article className="p-4 bg-white rounded shadow-sm border">
       <header className="flex gap-3 items-start">
-        <img
+        <Image
           src={post.author?.avatarUrl || "/avatar.png"}
-          className="w-10 h-10 rounded-full"
+          width={20}
+          height={20}
+          className="rounded-full"
           alt=""
         />
         <div className="flex-1">
@@ -58,6 +61,7 @@ export const PostItem: React.FC<{
 
           <div className="mt-3 flex items-center gap-4 text-sm">
             <button
+              type="button"
               aria-pressed={post.viewer?.liked}
               onClick={() => onToggleLike(post.id, !!post.viewer?.liked)}
               className="flex items-center gap-2"

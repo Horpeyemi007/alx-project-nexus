@@ -16,11 +16,11 @@ export default function Hero() {
 
       <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
         <Image
-          src="/images/social-feed-mockup.png"
+          src="/images/hero-logo.png"
           alt="Social Feed Mockup"
-          width={20}
-          height={20}
-          className="rounded-xl shadow-lg w-3/4"
+          width={400}
+          height={300}
+          className="rounded-xl"
         />
       </div>
     </section>

@@ -19,8 +19,8 @@ const Header: React.FC = () => {
           <Link href="#about" className={navClass}>
             About
           </Link>
-          <Link href="#contact" className={navClass}>
-            Contact
+          <Link href="/posts" className={navClass}>
+            Posts
           </Link>
         </nav>
         {/* auth */}

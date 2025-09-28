@@ -7,17 +7,17 @@ import { useAuth } from "@/hooks/useAuth";
 
 export default function DashboardPage() {
   const { user } = useAuth();
-  const [editing, setEditing] = useState<any | null>(null);
+  const [editing, setEditing] = useState<any>(null);
   const {
     posts,
     loading,
-    loadMore,
     createPost,
     updatePost,
     deletePost,
     toggleLike,
     addComment,
     sharePost,
+    loadMore,
   } = usePosts(10);
 
   const handleCreate = async (content: string) => {
